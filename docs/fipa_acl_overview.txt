@@ -1,0 +1,7 @@
+FIPA ACL Overview
+
+The Foundation for Intelligent Physical Agents (FIPA) Agent Communication Language (ACL) is a standardized messaging protocol designed for multi-agent systems. FIPA ACL was developed to enable heterogeneous agents from different vendors to communicate effectively in distributed environments.
+
+FIPA ACL messages are structured around speech act theory, where each message represents a communicative act with specific semantics. The standard defines 22 performatives (message types) that agents can use to express intentions, share information, request actions, and negotiate. Unlike simple data exchange protocols, FIPA ACL embeds the communicative intent directly into the message structure, allowing agents to understand not just what is being said, but why it is being said.
+
+The protocol operates at the application layer and is transport-independent, meaning FIPA ACL messages can be transmitted over HTTP, SMTP, IIOP, or any other transport mechanism. This flexibility makes it suitable for various deployment scenarios, from local agent platforms to internet-scale distributed systems. FIPA ACL remains one of the most widely referenced standards in academic multi-agent system research.

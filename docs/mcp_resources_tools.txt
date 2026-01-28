@@ -1,0 +1,7 @@
+MCP Resources and Tools
+
+MCP distinguishes between three core primitives: resources, prompts, and tools. Resources represent data sources that can be read by the LLM, such as files, database records, or API responses. Each resource has a unique URI (e.g., file:///path/to/doc.txt or db://users/123) and optional MIME type. Resources are read-only from the LLM's perspective and provide contextual information for generation.
+
+Tools are executable functions that the LLM can invoke to perform actions or computations. Unlike resources, tools can have side effects and modify external state. Each tool has a JSON schema defining its input parameters and return type. For example, a tool might be "send_email(to: string, subject: string, body: string)" or "calculate_trajectory(velocity: float, angle: float)". The LLM receives tool descriptions and can decide when to invoke them based on user requests.
+
+Prompts are reusable templates that help structure LLM interactions. They can include placeholders for dynamic content and reference resources or tool outputs. MCP servers expose their available resources, tools, and prompts through a discovery mechanism. Clients query the server's capabilities and receive a manifest describing what's available. This dynamic discovery allows LLM applications to adapt to different MCP servers without hardcoded knowledge of their capabilities, enabling true plug-and-play integration.

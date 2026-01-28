@@ -1,0 +1,7 @@
+Semantic Search
+
+Semantic search is an information retrieval approach that understands the intent and contextual meaning of search queries rather than relying solely on keyword matching. Unlike traditional lexical search that matches exact terms, semantic search uses natural language understanding to find conceptually relevant results even when they don't share vocabulary with the query.
+
+The core technology behind semantic search involves converting both queries and documents into vector embeddings using neural language models. When a user submits a query, it's embedded into the same vector space as the indexed documents, and similarity metrics (typically cosine similarity) identify the most semantically related content. Advanced implementations incorporate techniques like query expansion, re-ranking models, and hybrid search that combines semantic and lexical approaches for optimal precision and recall.
+
+Semantic search has transformed user experience in search engines, enterprise knowledge bases, and conversational AI systems. It handles synonyms naturally (searching "laptop" finds "notebook computer"), understands paraphrasing, and can even bridge language gaps in multilingual scenarios. For RAG systems, semantic search is the retrieval mechanism that finds relevant context for LLM prompts. The effectiveness depends on embedding model quality, vector database efficiency (using approximate nearest neighbor algorithms like HNSW or IVF), and proper chunking strategies that balance context completeness with retrieval precision.

@@ -1,0 +1,7 @@
+FIPA Performatives
+
+FIPA ACL defines 22 standard performatives, each with precise semantics based on speech act theory. The most commonly used performatives fall into several categories based on their communicative purpose.
+
+Information transfer performatives include INFORM (sender believes content is true and wants receiver to believe it), CONFIRM (sender confirms content that receiver is uncertain about), and DISCONFIRM (sender denies content). Action performatives include REQUEST (sender wants receiver to perform an action), REQUEST-WHEN (conditional request), and REQUEST-WHENEVER (standing request). Negotiation performatives include PROPOSE (sender proposes a deal), ACCEPT-PROPOSAL, REJECT-PROPOSAL, and CFP (call for proposals in contract-net protocol).
+
+Query performatives include QUERY-IF (ask whether proposition is true), QUERY-REF (ask for object reference), and SUBSCRIBE (persistent query). Error handling uses NOT-UNDERSTOOD (receiver cannot parse message) and FAILURE (action could not be completed). Each performative has formal preconditions and postconditions defined in the FIPA specification. For example, INFORM requires the sender to believe the content is true, while REQUEST requires the sender to believe the receiver is capable of performing the requested action. This semantic precision enables agents to reason about message validity and expected responses.

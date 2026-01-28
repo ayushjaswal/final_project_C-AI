@@ -1,0 +1,7 @@
+FIPA Message Structure
+
+A FIPA ACL message consists of a performative and a set of message parameters. The performative is mandatory and defines the communicative act type (e.g., INFORM, REQUEST, PROPOSE). Message parameters provide context and routing information for the message.
+
+The essential parameters include: sender (the agent identifier of the message sender), receiver (one or more agent identifiers of intended recipients), content (the actual payload of the message), language (the content language, such as SL, KIF, or Prolog), ontology (the vocabulary used in the content), and protocol (the interaction protocol being followed, such as fipa-request or fipa-contract-net).
+
+Optional parameters enhance message semantics: reply-with and in-reply-to enable conversation threading, conversation-id groups related messages into dialogues, reply-by specifies deadlines, and encoding indicates content serialization format. The content parameter typically contains logical expressions or structured data conforming to the specified ontology. For example, in a weather information system, the content might be "(temperature 25 celsius)" using a weather ontology. This structured approach ensures that agents can parse, validate, and reason about received messages systematically.

@@ -1,0 +1,7 @@
+Model Context Protocol (MCP) Overview
+
+The Model Context Protocol (MCP) is an open protocol developed by Anthropic to standardize how AI applications provide context to Large Language Models. MCP enables LLMs to securely access external data sources, tools, and services through a unified interface, addressing the challenge of connecting AI models to real-world systems.
+
+MCP operates on a client-server architecture where MCP servers expose resources (data sources), prompts (templated interactions), and tools (executable functions) that MCP clients (typically LLM applications) can discover and utilize. The protocol uses JSON-RPC 2.0 for message exchange, ensuring language-agnostic interoperability. Unlike traditional API integrations that require custom code for each data source, MCP provides a standardized schema that any compliant client can understand.
+
+Key benefits include security through capability-based access control, composability allowing multiple MCP servers to work together, and discoverability where clients can enumerate available resources and tools at runtime. MCP servers can expose anything from local file systems and databases to web APIs and computational tools. This standardization is particularly valuable for RAG (Retrieval-Augmented Generation) systems, where LLMs need structured access to knowledge bases without hardcoded integrations.
