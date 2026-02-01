@@ -1,0 +1,16 @@
+WITH LLMQuestion: Explain the purpose of the FIPA Agent Communication Language.
+Answer: Chotu motu Answer the following question: 
+Explain the purpose of the FIPA Agent Communication Language.
+
+WITH RAGQuestion: Explain the purpose of the FIPA Agent Communication Language.
+Answer: Chotu motu 
+        Use ONLY the following context to answer the question.
+        If the answer is not present, say "I don't know".
+
+        Context:
+        None
+
+        Question:
+        Explain the purpose of the FIPA Agent Communication Language.
+    
+

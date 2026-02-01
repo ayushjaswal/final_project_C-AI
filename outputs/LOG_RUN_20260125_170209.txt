@@ -1,0 +1,47 @@
+WITH LLMQuestion: Explain the purpose of the FIPA Agent Communication Language.
+Answer: Chotu motu Answer the following question: 
+Explain the purpose of the FIPA Agent Communication Language.
+
+WITH RAGQuestion: Explain the purpose of the FIPA Agent Communication Language.
+Answer: Chotu motu 
+        Use ONLY the following context to answer the question.
+        If the answer is not present, say "I don't know".
+
+        Context:
+        [Source: fipa_acl_overview.txt | Similarity: 0.746]
+FIPA ACL Overview
+
+The Foundation for Intelligent Physical Agents (FIPA) Agent Communication Language (ACL) is a standardized messaging protocol designed for multi-agent systems. FIPA ACL was developed to enable heterogeneous agents from different vendors to communicate effectively in distributed environments.
+
+FIPA ACL messages are structured around speech act theory, where each message represents a communicative act with specific semantics. The standard defines 22 performatives (message types) that agents can use to express intentions, share information, request actions, and negotiate. Unlike simple data exchange protocols, FIPA ACL embeds the communicative intent directly into the message structure, allowing agents to understand not just what is being said, but why it is being said.
+
+The protocol operates at the application layer and is transport-independent, meaning FIPA ACL messages can be transmitted over HTTP, SMTP, IIOP, or any other transport mechanism. This flexibility makes it suitable for various deployment scenarios, from local agent platforms to internet-scale distributed systems. FIPA ACL remains one of the most widely referenced standards in academic multi-agent system research.
+
+---
+
+[Source: fipa_message_structure.txt | Similarity: 0.672]
+FIPA Message Structure
+
+A FIPA ACL message consists of a performative and a set of message parameters. The performative is mandatory and defines the communicative act type (e.g., INFORM, REQUEST, PROPOSE). Message parameters provide context and routing information for the message.
+
+The essential parameters include: sender (the agent identifier of the message sender), receiver (one or more agent identifiers of intended recipients), content (the actual payload of the message), language (the content language, such as SL, KIF, or Prolog), ontology (the vocabulary used in the content), and protocol (the interaction protocol being followed, such as fipa-request or fipa-contract-net).
+
+Optional parameters enhance message semantics: reply-with and in-reply-to enable conversation threading, conversation-id groups related messages into dialogues, reply-by specifies deadlines, and encoding indicates content serialization format. The content parameter typically contains logical expressions or structured data conforming to the specified ontology. For example, in a weather information system, the content might be "(temperature 25 celsius)" using a weather ontology. This structured approach ensures that agents can parse, validate, and reason about received messages systematically.
+
+---
+
+[Source: fipa_performatives.txt | Similarity: 0.618]
+FIPA Performatives
+
+FIPA ACL defines 22 standard performatives, each with precise semantics based on speech act theory. The most commonly used performatives fall into several categories based on their communicative purpose.
+
+Information transfer performatives include INFORM (sender believes content is true and wants receiver to believe it), CONFIRM (sender confirms content that receiver is uncertain about), and DISCONFIRM (sender denies content). Action performatives include REQUEST (sender wants receiver to perform an action), REQUEST-WHEN (conditional request), and REQUEST-WHENEVER (standing request). Negotiation performatives include PROPOSE (sender proposes a deal), ACCEPT-PROPOSAL, REJECT-PROPOSAL, and CFP (call for proposals in contract-net protocol).
+
+Query performatives include QUERY-IF (ask whether proposition is true), QUERY-REF (ask for object reference), and SUBSCRIBE (persistent query). Error handling uses NOT-UNDERSTOOD (receiver cannot parse message) and FAILURE (action could not be completed). Each performative has formal preconditions and postconditions defined in the FIPA specification. For example, INFORM requires the sender to believe the content is true, while REQUEST requires the sender to believe the receiver is capable of performing the requested action. This semantic precision enables agents to reason about message validity and expected responses.
+
+---
+
+        Question:
+        Explain the purpose of the FIPA Agent Communication Language.
+    
+

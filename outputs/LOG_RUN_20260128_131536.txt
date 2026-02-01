@@ -1,0 +1,8 @@
+WITH LLMQuestion: who is Taylor Swift
+Answer: Taylor Swift is an American singer-songwriter known for her narrative songwriting, which often draws from her personal life experiences. She was born on December 13, 1989, in Reading, Pennsylvania. Swift began her career in country music with her debut self-titled album in 2006 and soon gained widespread acclaim. Over the years, she has transitioned into pop and indie music, exploring various genres.
+
+Some of her most notable albums include "Fearless," "1989," "Reputation," "Lover," "Folklore," and "Evermore." Swift has received numerous awards, including multiple Grammy Awards, and is recognized for her impact on the music industry and her advocacy for artists' rights. Additionally, she has a large and devoted fanbase, often referred to as "Swifties." Beyond music, Swift is also known for her philanthropic efforts and has engaged in social and political issues.
+
+WITH RAGQuestion: who is Taylor Swift
+Answer: I don't know.
+

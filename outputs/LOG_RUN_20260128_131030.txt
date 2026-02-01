@@ -1,0 +1,6 @@
+WITH LLMQuestion: What is fipa
+Answer: FIPA stands for the Foundation for Intelligent Physical Agents. It is an organization that aims to promote and develop standards for intelligent agent technology. FIPA provides a framework for interoperability in the development and deployment of agent-based systems. Its standards cover various aspects of agent communication, such as message protocols and agent services, facilitating the integration of multiple agents and systems across different platforms and industries. The goal is to enhance the ability of agents to work together, share information, and perform tasks in a coordinated manner.
+
+WITH RAGQuestion: What is fipa
+Answer: I don't know.
+
